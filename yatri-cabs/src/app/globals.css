@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-poppins);
+  --font-mono: var(--font-geist-mono);
+  --font-m-plus: var(--font-m-plus-rounded);
+
+  --color-brand-green: #2d6a0f;
+  --color-brand-green-light: #38761d;
+  --color-brand-bg-green: #1a4d07;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  @apply text-gray-900 bg-white antialiased font-sans;
+}
+
+.hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/Besttrip.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+}
+
+.booking-card {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.curved-footer {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.blurred-ellipse {
+  position: absolute;
+  width: 1050px;
+  height: 870px;
+  top: -200px;
+  left: -240px;
+  background: rgba(0, 0, 0, 0.5);
+  filter: blur(200px);
+  border-radius: 50%;
+  z-index: 1;
+}
