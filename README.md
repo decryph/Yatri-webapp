@@ -1,6 +1,3 @@
-
-# Yatri-webapp
-=======
 # Yatri Cabs
 
 A modern car rental booking platform built for seamless local and outstation travel.
