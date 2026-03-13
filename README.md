@@ -9,6 +9,9 @@ A modern car rental booking platform built for seamless local and outstation tra
 - Multiple vehicle types
 - Real-time fare calculation
 - GPS-based billing
+  
+##Screenshots
+
 
 ## Setup
 
