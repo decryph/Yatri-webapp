@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Yatri Cabs - India's Leading One Way Intercity Cab Service</title>
+    <!-- Tailwind CSS v3 CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <style data-purpose="custom-colors">
+        :root {
+            --brand-green: #2d6a0f;
+            --brand-green-light: #38761d;
+            --brand-bg-green: #1a4d07;
+        }
+
+        .bg-brand-green {
+            background-color: var(--brand-green);
+        }
+
+        .text-brand-green {
+            color: var(--brand-green-light);
+        }
+    </style>
+    <style data-purpose="layout-styles">
+        .hero-section {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("DATA_URI_REMOVED");
+            background-size: cover;
+            background-position: center;
+            min-height: 550px
+        }
+
+        .booking-card {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2)
+        }
+
+        .curved-footer {
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px
+        }
+    </style>
+</head>
+
+<body class="font-sans antialiased text-gray-900 bg-white">
+    <!--MainHeader -->
+    <header class="w-full bg-white py-2 px-4 md:px-12 flex items-center justify-between border-b">
+        <!-- Logo Container -->
+        <div class="flex items-center" data-purpose="logo-container">
+            <div class="border-2 border-green-900 p-1 px-2">
+                <h1 class="text-2xl font-bold tracking-tighter text-gray-800 leading-none">
+                    YATRI<span class="text-green-700">CABS</span>
+                </h1>
+                <p class="text-[8px] tracking-[0.2em] font-bold text-gray-600">LIKE NEVER BEFORE</p>
+            </div>
+        </div>
+        <!-- Contact Pill -->
+        <div class="hidden md:flex items-center bg-[#2d6a0f] text-white rounded-full px-1 py-1"
+            data-purpose="contact-info">
+            <div class="bg-white text-black font-bold px-3 py-1 rounded-full flex items-center mr-2">
+                <span class="text-xl">24</span>
+                <div class="mx-1 h-4 w-px bg-black rotate-12"></div>
+                <span class="text-xl">7</span>
+            </div>
+            <div class="pr-4 font-bold text-lg">
+                +917860663399
+            </div>
+        </div>
+        <!-- User Actions -->
+        <div class="flex items-center space-x-6" data-purpose="header-actions">
+            <div class="flex flex-col items-center cursor-pointer">
+                <div class="border border-gray-400 p-1 rounded">
+                    <i class="fa-solid fa-download text-lg"></i>
+                </div>
+                <span class="text-[10px] font-semibold mt-1">Download App</span>
+            </div>
+            <div class="flex flex-col items-center cursor-pointer">
+                <div class="bg-brand-green text-white p-2 rounded-full w-10 h-10 flex items-center justify-center">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <span class="text-[10px] font-semibold mt-1">Hi, Ravi</span>
+            </div>
+        </div>
+    </header>
+    <!-- MainHeader -->
+    <!-- HeroSection -->
+    <main class="hero-section relative flex items-center justify-center px-4 md:px-12 py-12">
+        <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <!-- Headline Text -->
+            <div class="text-white max-w-xl" data-purpose="hero-content">
+                <h2 class="text-4xl md:text-6xl font-bold leading-tight uppercase">
+                    India's <span class="text-[#4ade80]">Leading</span><br />
+                    <span class="text-[#4ade80]">One Way Intercity</span><br />
+                    Cab Service Provider
+                </h2>
+            </div>
+            <!-- BEGIN: BookingWidget -->
+            <div class="bg-white rounded-2xl booking-card overflow-hidden w-full max-w-lg ml-auto"
+                data-purpose="booking-container">
+                <!-- Tabs -->
+                <div class="flex border-b">
+                    <button class="flex-1 py-4 text-center font-bold bg-[#2d6a0f] text-white">Outstation</button>
+                    <button class="flex-1 py-4 text-center font-bold text-gray-700 hover:bg-gray-50">Local</button>
+                    <button class="flex-1 py-4 text-center font-bold text-gray-700 hover:bg-gray-50">Airport</button>
+                </div>
+                <div class="p-6">
+                    <!-- Trip Type Selection -->
+                    <div class="flex items-center justify-center space-x-8 mb-8">
+                        <label class="inline-flex items-center cursor-pointer">
+                            <input checked="" class="form-radio text-green-600 focus:ring-green-500" name="trip"
+                                type="radio" />
+                            <span class="ml-2 font-semibold text-gray-600">One Way</span>
+                        </label>
+                        <label
+                            class="inline-flex items-center cursor-pointer border border-green-600 rounded px-2 py-0.5 bg-green-50">
+                            <input checked="" class="form-radio text-green-600 focus:ring-green-500" name="trip"
+                                type="radio" />
+                            <span class="ml-2 font-semibold text-gray-600">Round Trip</span>
+                        </label>
+                    </div>
+                    <!-- Form Fields -->
+                    <div class="grid grid-cols-2 gap-x-6 gap-y-8">
+                        <div class="relative">
+                            <label class="block text-xs font-bold text-gray-500 uppercase mb-1">From</label>
+                            <input
+                                class="w-full border-0 border-b-2 border-gray-300 focus:ring-0 focus:border-green-600 py-1 px-0 placeholder-gray-400"
+                                placeholder="Enter pickup location" type="text" />
+                        </div>
+                        <div class="relative">
+                            <label class="block text-xs font-bold text-gray-500 uppercase mb-1">To</label>
+                            <div class="relative">
+                                <input
+                                    class="w-full border-0 border-b-2 border-gray-300 focus:ring-0 focus:border-green-600 py-1 px-0 placeholder-gray-400"
+                                    placeholder="Enter destination" type="text" />
+                                <div class="absolute right-0 top-0 flex flex-col text-gray-400">
+                                    <i class="fa-solid fa-circle-minus text-xs mb-1"></i>
+                                    <i class="fa-solid fa-circle-plus text-xs"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <label class="block text-xs font-bold text-gray-500 uppercase mb-1">Pickup Date</label>
+                            <div class="relative">
+                                <input
+                                    class="w-full border-0 border-b-2 border-gray-300 focus:ring-0 focus:border-green-600 py-1 px-0 placeholder-gray-400"
+                                    placeholder="Select pickup date" type="text" />
+                                <i class="fa-regular fa-calendar absolute right-0 bottom-2 text-gray-400"></i>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <label class="block text-xs font-bold text-gray-500 uppercase mb-1">Return Date</label>
+                            <div class="relative">
+                                <input
+                                    class="w-full border-0 border-b-2 border-gray-300 focus:ring-0 focus:border-green-600 py-1 px-0 placeholder-gray-400"
+                                    placeholder="Select return date" type="text" />
+                                <i class="fa-regular fa-calendar absolute right-0 bottom-2 text-gray-400"></i>
+                            </div>
+                        </div>
+                        <div class="col-span-2 relative">
+                            <label class="block text-xs font-bold text-gray-500 uppercase mb-1">Pickup Time</label>
+                            <div class="relative flex items-center">
+                                <i class="fa-regular fa-clock text-gray-500 mr-2"></i>
+                                <input
+                                    class="w-full border-0 border-b-2 border-gray-300 focus:ring-0 focus:border-green-600 py-1 px-0 text-gray-600"
+                                    type="text" value="00 : 00" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CTA Button -->
+                    <div class="mt-10 flex justify-center">
+                        <button
+                            class="bg-[#2d6a0f] hover:bg-[#1a4d07] text-white font-bold py-3 px-10 rounded-lg transition shadow-lg">
+                            EXPLORE CABS
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- END: BookingWidget -->
+        </div>
+    </main>
+    <!-- END: HeroSection -->
+    <!-- BEGIN: FeatureFooter -->
+    <footer class="bg-[#dcdcdc] curved-footer -mt-10 relative z-10 pt-10 pb-12 px-4">
+        <div
+            class="container mx-auto grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-gray-400 text-center items-center">
+            <div class="px-6 py-4 md:py-0" data-purpose="feature-item">
+                <h3 class="text-3xl font-black text-gray-900 leading-tight">Transparent Billing</h3>
+                <p class="text-lg font-medium text-gray-700 mt-2">GPS Based Billing | No Km Tampering</p>
+            </div>
+            <div class="px-6 py-4 md:py-0 flex flex-col items-center" data-purpose="feature-download">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Download Now!</h3>
+                <div class="flex space-x-4">
+                    <a class="block bg-black rounded-md overflow-hidden h-12" href="#">
+                        <img alt="Get it on Google Play" class="h-full"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuApT4LNcw8CgKLn95FRVLlJSMNxzPsw6dTAHoCnCH8poGMar2ZISAK0H3hvTtK9MHQEWEVn0XMuO-Kl1lapi5-qFrv25E-hT6DAOYZpGT1JbKUbyZlKcm2tbxjOCAbUYA7OfVY4h4rpXX9m0gVGFSTKb9fbWDIeyeRWt6Rddb_f4Fxv5UMkuLrpYOJYPBa6gMREYqglKLdTwodOaIbNF3WS3P-k2X7hvqjYnbwtuQlbG08P-AmoU_qF-gEfgdlfaSGGZ-HVlfURYhM" />
+                    </a>
+                    <a class="block bg-black rounded-md overflow-hidden h-12" href="#">
+                        <img alt="Download on the App Store" class="h-full py-1 px-2"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV8WCySwj_-T6Cq67X1Pybpi0qlfHu0mpSy6BIz64TFU60_-HB5lUBuEB19I4YUAWyEbgw_B79amyjQAtKWk2LmbM6Y0YE15nsZqxAB7T_lsd0Ah-yuSPDHN26I1SwWNt23e07BOCPotN56j3r9q6fzjWgzabdLB4HOQ2N2Yl875OfY8onXWfmWAD3XIe2E9HZlphQ7sP1Sa4MFaEOZ0XEH9yoGUZKUtNanMdMyS9m6ZEcA6YZSIm65pOQSoZrRh3Y3llQbrgwoyk" />
+                    </a>
+                </div>
+            </div>
+            <div class="px-6 py-4 md:py-0" data-purpose="feature-item">
+                <h3 class="text-4xl font-black text-gray-900 leading-tight">No return fare</h3>
+                <p class="text-lg font-medium text-gray-700 mt-2">Oneway Cab Fare | No Hidden Charges</p>
+            </div>
+        </div>
+    </footer>
+    <!-- END: FeatureFooter -->
+</body>
+
+</html>
