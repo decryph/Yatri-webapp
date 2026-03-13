@@ -1,5 +1,5 @@
 
-"# Yatri-webapp" 
+# Yatri-webapp
 =======
 # Yatri Cabs
 
@@ -35,4 +35,4 @@ npm run build
 - Next.js
 - TypeScript
 - Tailwind CSS
->>>>>>> 7423cfb (Initial commit)
+
